@@ -54,3 +54,11 @@ func DIP() {
 	headMaster := HeadMaster{faculty: Faculty}
 	headMaster.Manage()
 }
+
+
+// ✔ Headmaster depends on the Faculty interface, not specific faculty types
+// ✔ Adding new faculty members (like Secretary) requires no changes to Headmaster
+// ✔ System is now loosely coupled, flexible, and easily extendable
+// Before DIP: Headmaster directly depended on concrete faculty types → rigid and hard to modify.
+// After DIP: Headmaster now depends on the Faculty interface → flexible and extensible.
+
